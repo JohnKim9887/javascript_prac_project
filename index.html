@@ -1,2 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-<H1> HI </H1>
+            /* Keeps the square compact and visible without affecting other elements */
+            #mouseFollowSquare {
+                width: 40px;
+                height: 40px;
+                background-color: #0078d4;
+                border-radius: 4px;
+            }
+
+            .click-square {
+                position: fixed;
+                width: 32px;
+                height: 32px;
+                background-color: #ff7043;
+                border-radius: 4px;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <H1 id = "Title"> 
+            This is basic Javascript Webapp.
+        </H1>
+        <H1 id = "ButtonDescription"> 
+            This is basic Javascript Webapp.
+        </H1>
+        <H1 id="mousePosDisplay"> 
+            Move the mouse to see its position.
+        </H1>
+        <button id="showTextButton">Show Text</button>
+        <div id="mouseFollowSquare"></div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
